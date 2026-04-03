@@ -120,7 +120,7 @@ var (
 
 func init() {
 	const (
-		opengles = runtime.GOOS == "linux" || runtime.GOOS == "freebsd" || runtime.GOOS == "openbsd" || runtime.GOOS == "windows" || runtime.GOOS == "js" || runtime.GOOS == "android" || runtime.GOOS == "darwin" || runtime.GOOS == "ios"
+		opengles = runtime.GOOS == "linux" || runtime.GOOS == "freebsd" || runtime.GOOS == "openbsd" || runtime.GOOS == "netbsd" || runtime.GOOS == "windows" || runtime.GOOS == "js" || runtime.GOOS == "android" || runtime.GOOS == "darwin" || runtime.GOOS == "ios"
 		opengl   = runtime.GOOS == "darwin"
 		d3d11    = runtime.GOOS == "windows"
 		vulkan   = runtime.GOOS == "linux" || runtime.GOOS == "android"
